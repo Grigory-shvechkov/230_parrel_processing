@@ -1,0 +1,13 @@
+CC = gcc
+CFLAGS = -std=c11 -Wall -Wextra -Iinc
+
+SRC = src/scheduler.c inc/util.c
+TARGET = scheduler
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
+
+clean:
+	rm -f $(TARGET)
