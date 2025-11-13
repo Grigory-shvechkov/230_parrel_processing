@@ -7,6 +7,7 @@
 #include <string.h>
 #include <errno.h>
 #include "util.h"
+#include <time.h>
 
 
 int main_to_core[NUM_CORES][2];
